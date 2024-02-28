@@ -1,0 +1,51 @@
+/* Resetting default margin and padding */
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+  }
+
+  /* Base styles for sections */
+  .section {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+  }
+
+  /* Section title styles */
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffa500; /* orange */
+    padding: 5px 10px;
+    border: 1px solid black;
+    color: #fff; /* white */
+  }
+
+  /* Desktop view */
+  @media screen and (min-width: 992px) {
+    .section {
+      width: 33.33%;
+    }
+  }
+
+  /* Tablet view */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .section {
+      width: 50%;
+    }
+    .section:nth-child(3) {
+      clear: both;
+    }
+  }
+
+  /* Mobile view */
+  @media screen and (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+  }
